@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name, year, month, day, height, adult, age;
+        name ="홍길동", year ="2009", month="7", day ="12", height="153";
+        // var name = "홍길동";
+        // var year = "2009";
+        // var month = "7";
+        // var day = "12";
+        // var height = "153";
+
+        var myDate = new Date();
+        var currentYear = myDate.getFullYear();
+        console.log(currentYear);
+
+        // var age;
+        // var adult;
+
+        var age = currentYear - year;
+        console.log(age);
+        if(age){
+            adult = "미성년자";
+        } else{
+            adult = "성년";
+        }
+        document.write(name + "님 당신은 "+ year +"년 "+ month +"월 "+ day +"일에 태어났습니다.<br>");
+        document.write(currentYear+"년 현재 당신의 키는 "+ height + "cm입니다.<br>");
+        document.write("당신은 현재 "+ age +"살이며, 당신은 "+ adult +"입니다.");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
