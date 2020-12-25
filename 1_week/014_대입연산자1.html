@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>대입 연산자</h1>
+    <div id="box">box</div>
+
+    <button onclick="borderPlus()">+</button>
+    <button onclick="borderMinus()">-</button>
+    <script>
+        var boxBorder = 1;
+        function borderPlus(){
+            boxBorder++;
+            // document.getElementById("box").style.border = "1px solid red";
+            // document.getElementById("box").style.borderWidth = "4px";
+            document.getElementById("box").style.borderWidth = boxBorder + "px";
+        }
+        function borderMinus(){
+            if(boxBorder > 2){
+                boxBorder--;
+            }
+            // document.getElementById("box").style.border = "1px solid red";
+            // document.getElementById("box").style.borderWidth = "4px";
+            document.getElementById("box").style.borderWidth = boxBorder + "px";
+        }
+    </script>
+</body>
+</html>
